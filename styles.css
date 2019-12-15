@@ -1,0 +1,68 @@
+body {
+	font-family: sans-serif;
+	color: ghostwhite;
+	background: linear-gradient(30deg, #001344, #16161d);
+	min-height: 100vh;
+	padding-bottom: 50px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.selected {
+	display: grid;
+	grid-template-columns: repeat(3, 33%);
+}
+
+#InputContainer {
+	text-align: center;
+}
+
+#InputContainer button {
+	display: block;
+	margin: 30px auto;
+	height: 40px;
+	width: 90px;
+	border-radius: 10px;
+}
+
+.Alert_Container {
+	grid-template-columns: 100%;
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
+.titles {
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
+.Container {
+	text-align: center;
+}
+
+.Container .Line {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	display: grid;
+}
+
+.Container .quality {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.Container .BitRate {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.Container .DataSize {
+	grid-column-end: 3;
+	grid-column-end: 4;
+}

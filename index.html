@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blackmagic Calculator</title>
+    <link rel="stylesheet" type="css" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Blackmagic Calculator</h1>
+    <div id="InputContainer" >
+      <label for="Time">Minutes of shooting:</label>
+      <input type="number" value="" id="Time"> minutes
+      
+      <h3>Codec</h3>
+      <select id="CodecSelect">
+        <option value="">Select Codec</option>
+        <option value="BRAW" name="BRAW" checked />Blackmagic Raw</option>
+        <option value="PRORES" name="PRORES" />ProRes</option>
+      </select>
+      
+      <h3>Resolution</h3>
+      <select id="ResolutionSelect">
+        <option value="">Select Resolution</option>
+        <option value="4KDCI" name="" />4k DCI - 4096 x 2160</option>
+        <option value="4K2.4:1">4K 2.4:1 - 4096 x 1712</option>
+        <option value="ULTRAHD">Ultra HD - 3840 x 2160</option>
+        <option value="2.8K">2.8K Anamorphic - 2880 x 2160</option>
+        <option value="2.6K">2.6K 16:9 - 2688 x 1512</option>
+        <option value="HD">HD - 1920 x 1080</option>
+      </select>
+      
+      <button id="SizeCalculator">Calculate</button>
+    </div>
+
+    <div class="Container hidden" id="BRAW_Container">
+      <h3 class="titles">Quality</h3>
+      <h4 class="titles">Constant Bitrate</h4>
+
+      <h3>Compression</h3>
+      <h3>Bit Rate</h3>
+      <h3>File Size</h3>
+
+      <div class="Line">
+        <h3 class="quality">3:1</h3>
+        <h4 class="BitRate" id="BRAW_3_1"></h4>
+        <h4 class="DataSize" id="BRAW_3_1_SIZE"></h4>
+      </div>
+      <div class="Line">
+        <h3 class="quality">5:1</h3>
+        <h4 class="BitRate" id="BRAW_5_1"></h4>
+        <h4 class="DataSize" id="BRAW_5_1_SIZE"></h4>
+      </div>
+      <div class="Line">
+        <h3 class="quality">8:1</h3>
+        <h4 class="BitRate" id="BRAW_8_1"></h4>
+        <h4 class="DataSize" id="BRAW_8_1_SIZE"></h4>
+      </div>
+      <div class="Line">
+        <h3 class="quality">12:1</h3>
+        <h4 class="BitRate" id="BRAW_12_1"></h4>
+        <h4 class="DataSize" id="BRAW_12_1_SIZE"></h4>
+      </div>
+
+      <h3 class="titles">Constant Quality</h3>
+      <div class="Line">
+        <h3 class="quality">Q0</h3>
+        <h4 class="BitRate" id="BRAW_Q0"></h4>
+        <h4 class="DataSize" id="BRAW_Q0_SIZE"></h4>
+      </div>
+      <div class="Line">
+        <h3 class="quality">Q5</h3>
+        <h4 class="BitRate" id="BRAW_Q5"></h4>
+        <h4 class="DataSize" id="BRAW_Q5_SIZE"></h4>
+      </div>
+    </div>
+
+    <div class="Container hidden" id="PRORES_Container">
+      <h3 class="titles">Quality</h3>
+
+      <h3>Compression</h3>
+      <h3>Bit Rate</h3>
+      <h3>File Size</h3>
+
+      <div class="Line">
+        <h3 class="quality">ProRes 422HQ</h3>
+        <h4 class="BitRate" id="PRORES_422_HQ"></h4>
+        <h3 class="DataSize" id="PRORES_422_HQ_SIZE"></h3>
+      </div>
+      <div class="Line">
+        <h3 class="quality">ProRes 422</h3>
+        <h4 class="BitRate" id="PRORES_422"></h4>
+        <h3 class="DataSize" id="PRORES_422_SIZE"></h3>
+      </div>
+      <div class="Line">
+         <h3 class="quality">ProRes 422LT</h3>
+         <h4 class="BitRate" id="PRORES_422_LT"></h4>
+          <h3 class="DataSize" id="PRORES_422_LT_SIZE"></h3>
+      </div>
+      <div class="Line">
+        <h3 class="quality">ProRes Proxy</h3>
+        <h4 class="BitRate" id="PRORES_PROXY"></h4>
+        <h3 class="DataSize" id="PRORES_PROXY_SIZE"></h3>
+       </div>
+    </div>
+
+    <div class="Alert_Container hidden" id="NO_PRORES">
+      <h3>ProRes is not available in this Resolution.</h3>
+      <h4>Try shooting in:</h4>
+      <h4>4K DCI</h4>
+      <h4>Ultra HD</h4>
+      <h4>HD</h4>
+    </div>
+  </body>
+
+  <script type="text/javascript" src="./scripts.js" />
+</html>
