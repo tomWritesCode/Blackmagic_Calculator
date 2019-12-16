@@ -1,4 +1,4 @@
-//
+
 let timeShooting = 0;
 
 let $BitRate = {
