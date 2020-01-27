@@ -87,7 +87,7 @@ h1, h3 {
 
 @media(max-width: 500px) {
 .Container .CQ_Line {
-	grid-template-columns: 20% 40% 40%;
+	grid-template-columns: 30% 35% 35%;
 	grid-column-start: 1;
 	grid-column-end: 4;
 	display: grid;
