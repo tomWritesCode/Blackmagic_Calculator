@@ -78,11 +78,20 @@ h1, h3 {
 	display: grid;
 }
 
+.Container .CQ_Line{
+	grid-template-columns: repeat(3, 33%);
+	grid-column-start: 1;
+	grid-column-end: 4;
+	display: grid;
+}
+
+@media(max-width: 500px) {
 .Container .CQ_Line {
 	grid-template-columns: 20% 40% 40%;
 	grid-column-start: 1;
 	grid-column-end: 4;
 	display: grid;
+}
 }
 
 .Container .quality {
