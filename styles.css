@@ -35,18 +35,51 @@ h1, h3 {
 	grid-template-columns: 100%;
 	grid-column-start: 1;
 	grid-column-end: 4;
+	text-align: center;
+}
+
+.Alert_Container h3{
+	margin: 15px;
+}
+
+.Alert_Container h4 {
+	margin: 10px;
 }
 
 .titles {
+	margin: 5px 0;
+	text-decoration: underline;
+	text-decoration-color: #00feff;
 	grid-column-start: 1;
 	grid-column-end: 4;
+	-moz-text-decoration-color: #00feff;
 }
 
 .Container {
 	text-align: center;
 }
 
+.Container hr{
+	width: 100%;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	margin: 2px 0;
+	color: #00feff;
+}
+
+.Container .last{
+	margin-bottom: 30px;
+}
+
 .Container .Line {
+	grid-template-columns: repeat(3, 33%);
+	grid-column-start: 1;
+	grid-column-end: 4;
+	display: grid;
+}
+
+.Container .CQ_Line {
+	grid-template-columns: 20% 40% 40%;
 	grid-column-start: 1;
 	grid-column-end: 4;
 	display: grid;
@@ -55,14 +88,21 @@ h1, h3 {
 .Container .quality {
 	grid-column-start: 1;
 	grid-column-end: 2;
+	align-self: center;
 }
 
 .Container .BitRate {
 	grid-column-start: 2;
 	grid-column-end: 3;
+	align-self: center;
+}
+
+.Container .CQ {
+	font-size: 90%;
 }
 
 .Container .DataSize {
 	grid-column-end: 3;
 	grid-column-end: 4;
+	align-self: center;
 }

@@ -36,82 +36,93 @@
     </div>
 
     <div class="Container hidden" id="BRAW_Container">
-      <h3 class="titles">Quality</h3>
+      <h3 class="titles">BLACKMAGIC RAW</h3>
       <h4 class="titles">Constant Bitrate</h4>
 
       <h3>Compression</h3>
       <h3>Bit Rate</h3>
       <h3>File Size</h3>
 
+      <hr/>
+
       <div class="Line">
         <h3 class="quality">3:1</h3>
         <h4 class="BitRate" id="BRAW_3_1"></h4>
         <h4 class="DataSize" id="BRAW_3_1_SIZE"></h4>
       </div>
+      <hr/>
       <div class="Line">
         <h3 class="quality">5:1</h3>
         <h4 class="BitRate" id="BRAW_5_1"></h4>
         <h4 class="DataSize" id="BRAW_5_1_SIZE"></h4>
       </div>
+      <hr/>
       <div class="Line">
         <h3 class="quality">8:1</h3>
         <h4 class="BitRate" id="BRAW_8_1"></h4>
         <h4 class="DataSize" id="BRAW_8_1_SIZE"></h4>
       </div>
+      <hr/>
       <div class="Line">
         <h3 class="quality">12:1</h3>
         <h4 class="BitRate" id="BRAW_12_1"></h4>
         <h4 class="DataSize" id="BRAW_12_1_SIZE"></h4>
       </div>
-
+      <hr class="last" />
       <h3 class="titles">Constant Quality</h3>
-      <div class="Line">
+      <div class="CQ_Line">
         <h3 class="quality">Q0</h3>
-        <h4 class="BitRate" id="BRAW_Q0"></h4>
-        <h4 class="DataSize" id="BRAW_Q0_SIZE"></h4>
+        <h4 class="BitRate CQ" id="BRAW_Q0"></h4>
+        <h4 class="DataSize CQ" id="BRAW_Q0_SIZE"></h4>
       </div>
-      <div class="Line">
+      <hr/>
+      <div class="CQ_Line">
         <h3 class="quality">Q5</h3>
-        <h4 class="BitRate" id="BRAW_Q5"></h4>
-        <h4 class="DataSize" id="BRAW_Q5_SIZE"></h4>
+        <h4 class="BitRate CQ" id="BRAW_Q5"></h4>
+        <h4 class="DataSize CQ" id="BRAW_Q5_SIZE"></h4>
       </div>
+      <hr/>
     </div>
 
     <div class="Container hidden" id="PRORES_Container">
-      <h3 class="titles">Quality</h3>
+      <h3 class="titles">PRORES</h3>
 
       <h3>Compression</h3>
       <h3>Bit Rate</h3>
       <h3>File Size</h3>
-
+      <hr/>
       <div class="Line">
         <h3 class="quality">ProRes 422HQ</h3>
         <h4 class="BitRate" id="PRORES_422_HQ"></h4>
         <h3 class="DataSize" id="PRORES_422_HQ_SIZE"></h3>
       </div>
+      <hr/>
       <div class="Line">
         <h3 class="quality">ProRes 422</h3>
         <h4 class="BitRate" id="PRORES_422"></h4>
         <h3 class="DataSize" id="PRORES_422_SIZE"></h3>
       </div>
+      <hr/>
       <div class="Line">
-         <h3 class="quality">ProRes 422LT</h3>
-         <h4 class="BitRate" id="PRORES_422_LT"></h4>
+        <h3 class="quality">ProRes 422LT</h3>
+        <h4 class="BitRate" id="PRORES_422_LT"></h4>
           <h3 class="DataSize" id="PRORES_422_LT_SIZE"></h3>
       </div>
+      <hr/>
       <div class="Line">
         <h3 class="quality">ProRes Proxy</h3>
         <h4 class="BitRate" id="PRORES_PROXY"></h4>
         <h3 class="DataSize" id="PRORES_PROXY_SIZE"></h3>
-       </div>
+      </div>
+      <hr/>
     </div>
 
     <div class="Alert_Container hidden" id="NO_PRORES">
       <h3>ProRes is not available in this Resolution.</h3>
-      <h4>Try shooting in:</h4>
-      <h4>4K DCI</h4>
-      <h4>Ultra HD</h4>
-      <h4>HD</h4>
+      <h3>Try shooting in:</h3>
+      <h4> - 4K DCI - </h4>
+      <h4> - Ultra HD - </h4>
+      <h4> - HD - </h4>
     </div>
   </body>
 
